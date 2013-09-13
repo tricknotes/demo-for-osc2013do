@@ -4,7 +4,7 @@ Account.IndexController = Ember.ObjectController.extend({
       this.get('lines').addObject(Account.OrderLine.create());
     },
 
-    deleteLine: function(orderLine) {
+    deleteOrderLine: function(orderLine) {
        this.get('lines').removeObject(orderLine);
     },
 
