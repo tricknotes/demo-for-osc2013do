@@ -3,10 +3,12 @@
 
   <div id="navigation">
     {{#link-to 'sheets'}}
+      <i class="icon-list-ul"></i>
       一覧を見る
     {{/link-to}}
     |
     {{#link-to 'index'}}
+      <i class="icon-edit"></i>
       登録する
     {{/link-to}}
   </div>
@@ -14,6 +16,9 @@
 
 <footer>
   <span>
-    © 2013 Ryunosuke SATO(<a href="https://github.com/tricknotes">@tricknotes</a>). All rights reserved.
+    © 2013 Ryunosuke SATO
+    {{link-to-social mediaType="twitter" account="tricknotes"}}
+    {{link-to-social mediaType="github"  account="tricknotes"}}
+    All rights reserved.
   </span>
 </footer>

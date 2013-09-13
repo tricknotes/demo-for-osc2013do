@@ -13,22 +13,32 @@
       <td>{{input value=productName}}</td>
       <td>{{input type=number value=unitPrice min=0}}</td>
       <td>{{input type=number value=count min=0}}</td>
-      <td>{{subtotal}}</td>
+      <td>
+        <i class="icon-jpy"></i>
+        {{subtotal}}
+      </td>
       <td>
         <button {{action 'deleteLine' this}}>
-          x
+          <i class="icon-remove"></i>
         </button>
       </td>
     </tr>
   {{/each}}
+  <tr>
+    <td colspan="3"></td>
+    <td>
+      <i class="icon-jpy"></i>
+      {{total}}
+    </td>
+  </tr>
 </table>
 
-合計: {{total}}円
-
 <button {{action 'addOrderLine'}}>
+  <i class="icon-double-angle-down"></i>
   行を追加
 </button>
 
 <button {{action 'addSheet'}}>
+  <i class="icon-plus"></i>
   登録する
 </button>
