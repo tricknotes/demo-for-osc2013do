@@ -1,11 +1,19 @@
-{{outlet}}
+<div id="content">
+  {{outlet}}
 
-<div id="menu">
-  {{#link-to 'sheets'}}
-    一覧を見る
-  {{/link-to}}
-  |
-  {{#link-to 'index'}}
-    登録する
-  {{/link-to}}
+  <div id="navigation">
+    {{#link-to 'sheets'}}
+      一覧を見る
+    {{/link-to}}
+    |
+    {{#link-to 'index'}}
+      登録する
+    {{/link-to}}
+  </div>
 </div>
+
+<footer>
+  <span>
+    © 2013 Ryunosuke SATO(<a href="https://github.com/tricknotes">@tricknotes</a>). All rights reserved.
+  </span>
+</footer>
