@@ -6,6 +6,15 @@ Account.IndexController = Ember.ObjectController.extend({
 
     deleteLine: function(orderLine) {
        this.get('lines').removeObject(orderLine);
+    },
+
+    addSheet: function() {
+      var sheet = this.get('model');
+      sheet.set('createdAt', new Date());
+
+      Account.Sheet.sheets.addObject(sheet);
+
+      this.transitionToRoute('sheets');
     }
   }
 });

@@ -8,3 +8,5 @@ Account.Sheet = Ember.Object.extend({
     }, 0);
   }.property('lines.@each.subtotal')
 });
+
+Account.Sheet.sheets = [];
