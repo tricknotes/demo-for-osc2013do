@@ -6,3 +6,4 @@ OSC Hokkaido 2013
 * http://sapporojs.org/news/2013/08/12/osc2013-do.html
 
 デモ用: 帳票作成アプリ
+* http://tricknotes.github.io/demo-for-osc2013do/
