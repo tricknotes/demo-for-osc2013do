@@ -13,7 +13,7 @@
       <td>{{input value=productName}}</td>
       <td>{{input type=number value=unitPrice min=0}}</td>
       <td>{{input type=number value=count min=0}}</td>
-      <td>{{total}}</td>
+      <td>{{subtotal}}</td>
       <td>
         <button {{action 'deleteLine' this}}>
           x
@@ -22,6 +22,8 @@
     </tr>
   {{/each}}
 </table>
+
+合計: {{total}}円
 
 <button {{action 'addOrderLine'}}>
   行を追加

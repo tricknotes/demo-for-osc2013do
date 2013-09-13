@@ -3,7 +3,7 @@ Account.OrderLine = Ember.Object.extend({
   unitPrice:   0,
   count:       0,
 
-  total: function() {
+  subtotal: function() {
     return this.get('unitPrice') * this.get('count');
   }.property('unitPrice', 'count')
 });
