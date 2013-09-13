@@ -6,6 +6,7 @@
     <th>金額</th>
     <th>個数</th>
     <th>小計</th>
+    <th></th>
   </tr>
   {{#each lines}}
     <tr>
@@ -13,6 +14,11 @@
       <td>{{input type=number value=unitPrice min=0}}</td>
       <td>{{input type=number value=count min=0}}</td>
       <td>{{total}}</td>
+      <td>
+        <button {{action 'deleteLine' this}}>
+          x
+        </button>
+      </td>
     </tr>
   {{/each}}
 </table>
