@@ -1,0 +1,1 @@
+Account.SheetRoute=Ember.Route.extend({model:function(t){return Account.Sheet.sheets[t.id-0]},afterModel:function(t){t||this.transitionTo("not_found")}});
