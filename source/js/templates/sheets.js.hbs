@@ -7,8 +7,8 @@
 <ul>
   {{#each}}
     <li>
-      {{id}}:
-      {{createdAt}}
+      #{{id}}:
+      {{date createdAt}}
       {{#link-to 'sheet' this}}
         内容を見る
       {{/link-to}}

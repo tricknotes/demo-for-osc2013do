@@ -4,4 +4,5 @@ end
 
 folder 'source/js/vendor/' do
   file 'jquery.js', 'http://code.jquery.com/jquery-1.10.2.js'
+  file 'moment.js', 'https://raw.github.com/moment/moment/develop/moment.js'
 end
