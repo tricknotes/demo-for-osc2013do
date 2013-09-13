@@ -10,9 +10,9 @@
   </tr>
   {{#each lines}}
     <tr>
-      <td>{{input value=productName}}</td>
-      <td>{{input type=number value=unitPrice min=0}}</td>
-      <td>{{input type=number value=count min=0}}</td>
+      <td>{{input value=productName placeholder='商品名を入力してください'}}</td>
+      <td>{{input type=number value=unitPrice}}</td>
+      <td>{{input type=number value=count}}</td>
       <td>
         <i class="icon-jpy"></i>
         {{subtotal}}
