@@ -1,0 +1,1 @@
+Account.SheetRoute=Ember.Route.extend({model:function(e){return Account.Sheet.sheets[e.id-0]}});

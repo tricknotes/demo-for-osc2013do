@@ -1,0 +1,1 @@
+window.ENV={LOG_VERSION:!0};
