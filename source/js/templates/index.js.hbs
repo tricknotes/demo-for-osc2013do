@@ -7,6 +7,14 @@
     <th>個数</th>
     <th>小計</th>
   </tr>
+  {{#each lines}}
+    <tr>
+      <td>{{input value=productName}}</td>
+      <td>{{input type=number value=unitPrice min=0}}</td>
+      <td>{{input type=number value=count min=0}}</td>
+      <td>{{total}}</td>
+    </tr>
+  {{/each}}
 </table>
 
 {{#link-to 'sheets'}}
