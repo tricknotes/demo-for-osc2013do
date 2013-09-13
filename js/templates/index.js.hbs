@@ -7,28 +7,27 @@ function program1(depth0,data) {
   
   var buffer = '', stack1, hashContexts, hashTypes, options;
   data.buffer.push("\n    <tr>\n      <td>");
-  hashContexts = {'value': depth0};
-  hashTypes = {'value': "ID"};
+  hashContexts = {'value': depth0,'placeholder': depth0};
+  hashTypes = {'value': "ID",'placeholder': "STRING"};
   options = {hash:{
-    'value': ("productName")
+    'value': ("productName"),
+    'placeholder': ("商品名を入力してください")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("</td>\n      <td>");
-  hashContexts = {'type': depth0,'value': depth0,'min': depth0};
-  hashTypes = {'type': "ID",'value': "ID",'min': "INTEGER"};
+  hashContexts = {'type': depth0,'value': depth0};
+  hashTypes = {'type': "ID",'value': "ID"};
   options = {hash:{
     'type': ("number"),
-    'value': ("unitPrice"),
-    'min': (0)
+    'value': ("unitPrice")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("</td>\n      <td>");
-  hashContexts = {'type': depth0,'value': depth0,'min': depth0};
-  hashTypes = {'type': "ID",'value': "ID",'min': "INTEGER"};
+  hashContexts = {'type': depth0,'value': depth0};
+  hashTypes = {'type': "ID",'value': "ID"};
   options = {hash:{
     'type': ("number"),
-    'value': ("count"),
-    'min': (0)
+    'value': ("count")
   },contexts:[],types:[],hashContexts:hashContexts,hashTypes:hashTypes,data:data};
   data.buffer.push(escapeExpression(((stack1 = helpers.input || depth0.input),stack1 ? stack1.call(depth0, options) : helperMissing.call(depth0, "input", options))));
   data.buffer.push("</td>\n      <td>\n        <i class=\"icon-jpy\"></i>\n        ");
