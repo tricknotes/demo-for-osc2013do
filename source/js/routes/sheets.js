@@ -3,10 +3,10 @@ Account.SheetsRoute = Ember.Route.extend({
     var now = new Date();
 
     return [
-      Ember.Object.create({
+      Account.Sheet.create({
         createdAt: now
       }),
-      Ember.Object.create({
+      Account.Sheet.create({
         createdAt: new Date(now - 1 * 1000 * 60)
       })
     ];
