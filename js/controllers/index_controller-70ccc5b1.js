@@ -1,1 +1,0 @@
-Account.IndexController=Ember.ObjectController.extend({actions:{addOrderLine:function(){this.get("lines").addObject(Account.OrderLine.create())},deleteLine:function(e){this.get("lines").removeObject(e)},addSheet:function(){var e=this.get("model");e.set("createdAt",new Date),Account.Sheet.sheets.addObject(e),this.transitionToRoute("sheets")}}});
