@@ -1,4 +1,4 @@
-Account.SheetsRoute = Ember.Route.extend({
+Account.SheetsIndexRoute = Ember.Route.extend({
   model: function() {
     return Account.Sheet.sheets;
   }
